@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg {
+    background-image: url('iamges/bg-image.jpg');
+    /* Add your background image path here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+li {
+    list-style: none;
+    font-size: 24px;
+    color: #FB9D5C;
+}
+
+li:hover {
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.menu-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Banner CSS */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.banner-text {
+    max-width: 50%;
+    padding: 80px;
+}
+
+.banner-titel {
+    font-size: 2rem;
+    color: #FB9D5C;
+}
+
+.banner-description {
+    font-size: 3rem;
+    color: white;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+.banner-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FB9D5C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner-btn:hover {
+    background-color: #f08334;
+}
+
+.banner-img {
+    max-width: 45%;
+}
+
+.banner-photo {
+    width: 60%;
+    height: auto;
+}
+
+/* BRAND CSS */
+.brand-img {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: #F9F9F9;
+    padding: 20px;
+    margin: 0px 30px 0px 30px;
+}
+
+/* SERVICE CSS */
+.service-header {
+    font-size: 3rem;
+    color: #FB9D5C;
+    margin-top: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: center
+}
+
+.services_img {
+    display: block;
+    margin: auto;
+}
+
+.servics-description {
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.services-boxes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-titel {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box_description {
+    text-align: center;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    display: inline;
+    justify-content: center;
+    border: 1px solid gray;
+}
+
+
+.hire-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.hire-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire-img {
+    width: 80%;
+    height: auto;
+}
+
+.hire-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.hire-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0DCAF0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.hire-btn:hover {
+    background-color: #f08334;
+}
+
+.hire-title {
+    font-size: 35px;
+}
+
+.hire-highlight {
+    color: #FB9D5C;
+}
+
+.hire-description {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.hire-contact {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hire-icon {
+    color: rgb(206, 134, 102);
+    font-size: 50px;
+}
+
+.hire-consultation {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.hire-phone {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    color: rgb(206, 134, 102);
+    margin-bottom: 10px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+}
+
+.footer input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-text {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .banner-img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    .banner-photo {
+        width: 100%;
+    }
+
+    .brand-img {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .services-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hire-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hire-left,
+    .hire-right {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
+}
+
+/* Larger tablets and small desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .menu-container {
+        gap: 15px;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-text {
+        max-width: 70%;
+        padding: 40px;
+    }
+
+    .banner-img {
+        max-width: 70%;
+        margin-top: 20px;
+    }
+
+    .banner-photo {
+        width: 100%;
+    }
+
+    .brand-img {
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 10px;
+    }
+
+    .services-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .hire-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hire-left,
+    .hire-right {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
+}
+
+
+/* FIGMA */
+
+
+/* https://www.figma.com/design/9IlkJ5Bf89WZ6u1RFglFfu/securty?node-id=1-24&t=SH24ihtxMJiG1Qnm-0 */
